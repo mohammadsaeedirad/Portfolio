@@ -21,7 +21,7 @@ const Intrests = () => {
   
   return (
     <>
-      <p className='text-center mb-8 mt-14 text-gray-200 '>more about me</p>
+      <p className='text-center mb-8 mt-14 text-gray-200 '>Interests</p>
         <Swiper
           className="swiper2 "
           slidesPerView={3}

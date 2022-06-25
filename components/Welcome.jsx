@@ -8,9 +8,9 @@ const Welcome = () => {
       <div className="absolute bottom-8 animate-bounce cursor-pointer"> <a href="#about"><Image src="/mouse-cursor.png" width={80} height={80} /></a></div>
       <div>
           <div className="text-white font-mono w-fit flex justify center"  >    
-          <h1 className="text-sm sm:text-2xl " >{h1}</h1></div>
+          <h1 className="text-md sm:text-3xl " >{h1}</h1></div>
 
-           <div className="flex flex-row text-white" >
+           <div className="flex flex-row text-white text-sm sm:text-xl" >
            <p className="mr-1" >I'm a </p>
            <div className="w-fit text-[#4087b3]">
            <TypeAnimation

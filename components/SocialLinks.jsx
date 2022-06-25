@@ -5,7 +5,7 @@ const SocialLinks = () => {
   
   return (
     <div className="relative">
-      <div className='z-40 section__title fixed top-52 left-2 space-y-2 flex flex-col'>
+      <div className='z-40 section__title fixed top-52 left-1 space-y-2 flex flex-col'>
             <a href="https://www.linkedin.com/in/mohammad-saeedi-rad-54b2341b7/">
              <Image src="/linkedin.svg" alt="linkedin" width={40} height={40} />
             </a>

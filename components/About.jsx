@@ -24,13 +24,13 @@ const About = () => {
           
           <div className="w-full h-52 lg:w-3/5 lg:px-3 text-left">
             <p className="text-md mt-4 lg:mt-0  md:text-left text-sm">
-            Hi, <span className='text-yellow-500' >welcome</span>  to my portfolio.
-            as you know my name is mohammad and I'm graduated at <a href='https://iau.ir/fa' className='text-yellow-500' >islamic azad university</a>  with bachelor degree of computer engineering.
+            Hi, <span className='text-amber-500' >welcome</span>  to my portfolio.
+            as you know my name is mohammad and I'm graduated at <a href='https://iau.ir/fa' className='text-amber-500' >islamic azad university</a>  with bachelor degree of computer engineering.
             </p>
             <p className="text-md  lg:mt-0 md:text-left text-sm">
             I am a mature, positive and hardworking individual, who always strives to achieve the highest standard possible, at any given task.</p>
             <div className="text-md  mt-4  md:text-left text-sm">
-             call me:<a href="tel:+989203185480" className='text-yellow-500' > +989203185480</a></div>
+             call me:<a href="tel:+989203185480" className='text-amber-500' > +989203185480</a></div>
           </div>
           
           <div className="w-full lg:w-1/5 mt-28 sm:mt-12 lg:mt-0 lg:px-4 text-center md:text-left">

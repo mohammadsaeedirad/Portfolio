@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
+/* This pen */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  background-color: #031019;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+html {
+	scroll-behavior: smooth;
+  }
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.welcome {
+  height: 100vh;
+  width: 100%;
+  background-image: url("/welcome.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+}
+
+.welcome-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about {
+  background-color: #2a465c;
+  /* Resize the background image to cover the entire container */
+}
+.about-card{
+  background-color: #316d92;
+  color: #b7c9d1;
+}
+
+
+.skillset {
+	margin-top: 10px;
+}
+
+.skill-lockup {
+	max-width: 450px;
+	width: 100%;
+}
+
+.mr {
+	margin-right: 0;
+}
+
+.mb {
+	margin-bottom: 5px;
+}
+
+.skill-info {
+	display: block;
+	margin-bottom: 20px;
+}
+
+.skill-name {
+	float: left;
+	color: #666;
+}
+
+.skill-status {
+	float: right;
+	color: #c4c4c4;
+	font-size: .8em;
+}
+.skill-bar {
+	display: block;
+	max-width: 450px;
+	width: 100%;
+	height: 5px;
+	background: #b7c9d1;
+	clear: both;
+	margin: 20px 0;
+}
+
+.skill-level {
+	display: table;
+	height: 5px;
+}
+.javascript, .react,
+.next, .responsive,
+.css, .tailwind, .git, .seo, .docker ,.api ,.oop,.english{
+	background: #4087b3;
+}
+
+.javascript {
+	width: 50%;
+	-webkit-animation: javascript 7s linear;
+	animation: javascript 7s linear;
+}
+
+.react {
+	width: 60%;
+	-webkit-animation: react 7s linear;
+	animation: react 7s linear;
+}
+
+.next{
+	width: 60%;
+	-webkit-animation: next 7s linear;
+	animation: next 7s linear;
+}
+
+.responsive {
+	width: 85%;
+	-webkit-animation: responsive 7s linear;
+	animation: responsive 7s linear;
+}
+
+.css {
+	width: 70%;
+	-webkit-animation: css 7s linear;
+	animation: css 7s linear;
+}
+
+.tailwind {
+	width: 70%;
+	-webkit-animation: tailwind 7s linear;
+	animation: tailwind 7s linear;
+}
+
+.git {
+	width: 60%;
+	-webkit-animation: git 7s linear;
+	animation: git 7s linear;
+}
+
+.seo {
+	width: 70%;
+	-webkit-animation: seo 7s linear;
+	animation: seo 7s linear;
+}
+
+.docker {
+	width: 35%;
+	-webkit-animation: docker 7s linear;
+	animation: docker 7s linear;
+}
+
+.api {
+	width: 65%;
+	-webkit-animation: api 7s linear;
+	animation: api 7s linear;
+}
+
+.oop {
+	width: 60%;
+	-webkit-animation: oop 7s linear;
+	animation: oop 7s linear;
+}
+.english {
+	width: 70%;
+	-webkit-animation: oop 7s linear;
+	animation: oop 7s linear;
+}
+
+/*-----------------------
+	  	Animations 
+-------------------------*/ 
+@-webkit-keyframes javascript {
+	from { width: 0%; }
+	to { width: 50%; }
+}
+
+@keyframes javascript {
+	from { width: 0%; }
+	to { width: 50%; }
+}
+
+/*-----------------------
+	react
+-------------------------*/
+@-webkit-keyframes react {
+	from { width: 0%; }
+	to { width: 60%; }
+}
+
+@keyframes react {
+	from { width: 0%; }
+	to { width: 60%; }
+}
+
+/*-----------------------
+	 
+-------------------------*/ 
+@-webkit-keyframes next {
+	from { width: 0%; }
+	to { width: 60%; }
+}
+
+@keyframes next {
+	from { width: 0%; }
+	to { width: 60%; }
+}
+
+/*-----------------------
+  responsive Animation 
+-------------------------*/ 
+@-webkit-keyframes responsive {
+	from { width: 0%; }
+	to { width: 85%; }
+}
+
+@keyframes responsive {
+	from { width: 0%; }
+	to { width: 85%; }
+}
+
+/*-----------------------
+css Animation  
+-------------------------*/ 
+@-webkit-keyframes css {
+	from { width: 0%; }
+	to { width: 70%; }
+}
+
+@keyframes css {
+	from { width: 0%; }
+	to { width: 70%; }
+}
+
+/*-----------------------
+   tailwind Animation  
+-------------------------*/ 
+@-webkit-keyframes tailwind {
+	from { width: 0%; }
+	to { width: 70%; }
+}
+
+@keyframes tailwind {
+	from { width: 0%; }
+	to { width: 70%; }
+}
+
+/*-----------------------
+   git Animation  
+-------------------------*/ 
+@-webkit-keyframes git {
+	from { width: 0%; }
+	to { width: 60%; }
+}
+
+@keyframes git {
+	from { width: 0%; }
+	to { width: 60%; }
+}
+
+/*-----------------------
+   seo Animation  
+-------------------------*/ 
+@-webkit-keyframes seo {
+	from { width: 0%; }
+	to { width: 55%; }
+}
+
+@keyframes seo {
+	from { width: 0%; }
+	to { width: 55%; }
+}
+
+/*-----------------------
+   docker Animation  
+-------------------------*/ 
+@-webkit-keyframes docker {
+	from { width: 0%; }
+	to { width: 35%; }
+}
+
+@keyframes docker {
+	from { width: 0%; }
+	to { width: 35%; }
+}
+
+/*-----------------------
+   api Animation  
+-------------------------*/ 
+@-webkit-keyframes api {
+	from { width: 0%; }
+	to { width: 65%; }
+}
+
+@keyframes api {
+	from { width: 0%; }
+	to { width: 65%; }
+}
+
+/*-----------------------
+   oop Animation  
+-------------------------*/ 
+@-webkit-keyframes oop {
+	from { width: 0%; }
+	to { width: 60%; }
+}
+
+@keyframes oop {
+	from { width: 0%; }
+	to { width: 60%; }
+}
+
+/*-----------------------
+   oop Animation  
+-------------------------*/ 
+@-webkit-keyframes english {
+	from { width: 0%; }
+	to { width: 70%; }
+}
+
+@keyframes english {
+	from { width: 0%; }
+	to { width: 70%; }
+}
+
+
+
+
+/*-----------------------
+	  Media queries
+-------------------------*/ 
+
+
+@media screen and (max-width: 955px) {
+	.skillset {
+		padding: 20px;
+	}
+	.skill-lockup {
+		max-width: 700px;
+		width: 100%;
+		float: none;
+		margin: 0 auto;
+	}
+
+	.skill-bar {
+		max-width: 700px;
+		width: 100%;
+	}
+}
+
+
+.swiper {
+	height: 100%;
+  }
+  
+  .swiper-slide {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 18px;
+	font-size: 22px;
+	font-weight: bold;
+	color: #fff;
+  }
+  
+  
+
+.swiper {
+	width: 100%;
+	height: 100%;
+  }
+  
+  .swiper-slide {
+	position: relative;
+	text-align: center;
+	font-size: 18px;  
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+  }
+  
+
+  
+  
+  

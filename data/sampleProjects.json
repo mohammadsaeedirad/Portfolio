@@ -1,0 +1,24 @@
+[
+    {
+        "title": "Hamrahfelez company",
+        "projectUrl":"https://hamrahfelez.org",
+        "name": "hamrahfelez.org",
+        "descriptionBefore": "visit website: ",
+        "image": "/hamrahFelez.png"      
+      },
+      {
+        "title": "Hamrahfelez company CMS",
+        "projectUrl":"https://hamrahfelez.org",
+        "name": "hamrahfelez.org",
+        "descriptionBefore": "visit website: ",
+        "image": "/hamrahfelez-cms.png"      
+      },
+      {
+        "title": "Netfilix clone",
+        "projectUrl":"https://github.com/mohammadsaeedirad/netfilix",
+        "name": "Netfilix clone",
+        "descriptionBefore": "visit on github: ",
+        "image": "/netfilix.jpg"      
+      }
+   
+]

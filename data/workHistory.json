@@ -1,0 +1,23 @@
+[
+    {
+        "job-title": "Next js developer",
+        "company": "Hamrah felez company",
+        "date": "Des 2021 - Present . 8 months",
+        "projectUrl":"https://hamrahfelez.org",
+        "description": "hamrahfelez",
+        "descriptionAfter": "website and it's CMS",
+        "company-url": "https://hamrahfelez.org",
+        "image": "/hamrahFelez.png"      
+      },
+      {
+        "job-title": "FrontEnd developer",
+        "company": "Fahmco company",
+        "date": "Feb 2021 - Aug . 7 months",
+        "projectUrl":"https://takstart.shop",
+        "description-project": "bakian",
+        "description": "takstart",
+        "descriptionAfter": "web application and some othe UI designs",
+        "company-url": "https://fahmco.ir/",
+        "image": "/fanavaran.png"      
+      }
+]

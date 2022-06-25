@@ -48,7 +48,7 @@ const WorkHistory = () => {
                     <Image src={work.image}
                     alt={work.company}
                     layout="fill"
-                    className="rounded-lg"
+                    className="rounded-lg min-w-20 min-h-20"
                     objectFit="cover"
                     quality={100} />
                 </div>    

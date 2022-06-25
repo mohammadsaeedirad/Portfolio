@@ -6,7 +6,7 @@ const Skills = () => {
     <div className="flex flex-col sm:flex-row sm:justify-around">
 	 <div className="skillset w-100 sm:w-96 mx-4">
         <div className='flex' >
-          <Image src="/skill.svg" width={20} height={20} />
+          <Image src="/skill.svg" alt='skills' width={20} height={20} />
           <p className='text-zinc-300 pl-1 mb-1'>Skills</p>
         </div>
 				<div className="skill-lockup">
@@ -50,7 +50,7 @@ const Skills = () => {
 
       <div className="skillset w-100 sm:w-96 mx-4">
       <div className='flex' >
-          <Image src="/knowladge.svg" width={20} height={20} />
+          <Image src="/knowladge.svg" alt='knowladge' width={20} height={20} />
           <p className='text-zinc-300 pl-1 mb-1'>knowladges</p>
         </div>
 				<div className="skill-lockup">

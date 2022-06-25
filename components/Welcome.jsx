@@ -5,7 +5,7 @@ const Welcome = () => {
   return (
     
     <div className="welcome welcome-container relative">
-      <div className="absolute bottom-8 animate-bounce cursor-pointer"> <a href="#about"><Image src="/mouse-cursor.png" width={80} height={80} /></a></div>
+      <div className="absolute bottom-8 animate-bounce cursor-pointer"> <a href="#about"><Image src="/mouse-cursor.png" alt="mouse scroll" width={80} height={80} /></a></div>
       <div>
           <div className="text-white font-mono w-fit flex justify center"  >    
           <h1 className="text-md sm:text-3xl " >{h1}</h1></div>

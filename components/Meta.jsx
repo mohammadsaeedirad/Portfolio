@@ -14,7 +14,7 @@ const Meta = ({ title, description,indexed}) => {
       <meta charSet='utf-8' />
       <link
         rel='icon'
-        href='/profile.jpg'
+        href='/profile-circle.png'
       />
      
     </Head>

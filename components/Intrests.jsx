@@ -3,12 +3,11 @@ import Image from "next/image";
 import "swiper/css";
 import "swiper/css/pagination"
 import "swiper/css/navigation"
-
+import { memo } from "react";
 import SwiperCore, {
   Pagination,Navigation
 } from 'swiper';
 SwiperCore.use([Pagination,Navigation]);
-import Link from "next/link";
 const Intrests = () => {
   const items=[
       {img:'/coding.svg',url:'/'},
@@ -17,8 +16,7 @@ const Intrests = () => {
       {img:'/movies.svg',url:'/'},
       {img:'/coffee.svg',url:'/'},
       {img:'/pizza.svg',url:'/'},
-  ]  
-  
+  ]    
   return (
     <>
       <p className='text-center mb-8 mt-14 text-gray-200 '>Interests</p>
@@ -60,4 +58,4 @@ const Intrests = () => {
   );
 };
 
-export default Intrests;
+export default memo(Intrests);

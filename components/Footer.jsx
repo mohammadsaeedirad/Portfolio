@@ -1,5 +1,4 @@
-import React from 'react'
-
+import { memo } from "react";
 const Footer = () => {
   return (
     <div className='w-full h-14 bg-[#2a465c] flex justify-center items-center mt-8' >
@@ -7,5 +6,4 @@ const Footer = () => {
     </div>
   )
 }
-
-export default Footer
+export default memo(Footer);

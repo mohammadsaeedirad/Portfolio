@@ -1,4 +1,4 @@
-import React from "react";
+import { memo } from "react";
 import Link from "next/link";
 import Image from "next/image";
 const SocialLinks = () => {
@@ -24,4 +24,4 @@ const SocialLinks = () => {
   );
 };
 
-export default SocialLinks;
+export default memo(SocialLinks);

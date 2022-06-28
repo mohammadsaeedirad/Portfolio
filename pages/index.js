@@ -10,7 +10,7 @@ import Meta from "../components/Meta";
 export default function Home() {
   return (
     <>
-    <Meta title="mohammad saeedi rad" description="mohammad saeedi rad portfolio | resume" indexed="true" />
+    <Meta title="mohammad saeedi rad" description="I'm mohammad saeedi rad, a frontend,javascript and react developer" indexed="true" />
      <SocialLinks />
      <Welcome />
      <About />

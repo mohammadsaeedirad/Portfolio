@@ -17,8 +17,8 @@ const Projects = () => {
     <p className='text-center mb-8 mt-14 text-gray-200 '>my Top Projects</p>
     <Swiper
       style={{
-        "--swiper-navigation-color": "#eab308",
-        "--swiper-pagination-color": "#eab308",
+        "--swiper-navigation-color": "#f59e0b",
+        "--swiper-pagination-color": "#f59e0b",
       }}
       breakpoints={{
         120: {

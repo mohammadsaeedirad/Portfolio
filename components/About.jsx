@@ -4,7 +4,7 @@ const About = () => {
     <>  
       <div id='about' className="container about my-20 mx-auto p-4 md:p-0 rounded">  
       <div  className=" p-2 flex flex-wrap w-full lg:w-4/5 mx-auto"> 
-        <div className="bg-cover opacity-80 bg-bottom w-full md:w-1/3 h-96 md:h-90 rounded  relative" style={{backgroundImage:"url('profile.jpg')",backgroundPosition:"center center"}}>
+        <div className="bg-cover opacity-80 bg-bottom w-full md:w-1/3 h-96 md:h-90 rounded  relative" style={{backgroundImage:"url('mohammadsaeedirad.jpg')",backgroundPosition:"center center"}}>
         </div>
         <div className="about h-full w-full md:w-2/3">
           <div className="h-full mx-auto px-6 md:px-0 md:pt-6 md:-ml-6 relative">
@@ -22,7 +22,7 @@ const About = () => {
                 Hi, <span className='text-amber-500' >welcome</span>  to my portfolio.
                 as you know my name is mohammad and I'm graduated at <a href='https://iau.ir/fa' className='text-amber-500' >islamic azad university</a>  with bachelor degree of computer engineering.
                 </p>
-                <p className="text-md  lg:mt-0 md:text-left text-sm">
+                <p className="text-md lg:mt-0 md:text-left text-sm">
                 I am a mature, positive and hardworking individual, who always strives to achieve the highest standard possible, at any given task.</p>
                 <div className="text-md  mt-4  md:text-left text-sm">
                 call me:<a href="tel:+989203185480" className='text-amber-500' > +989203185480</a></div>

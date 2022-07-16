@@ -2,13 +2,13 @@ import Image from "next/image"
 import TypeAnimation from 'react-type-animation';
 const Welcome = () => {
   const h1="Hi, I'm mohammad"
-  return (
-    
+  return ( 
     <div className="welcome welcome-container relative">
       <Image src="/welcome.jpg" alt="mouse scroll" layout="fill"
         objectFit="cover"
         quality={100} />
-      <div className="absolute bottom-8 z-10 animate-bounce cursor-pointer"> <a href="#about"><Image src="/mouse-cursor.png" alt="mouse scroll" width={80} height={80} /></a></div>
+      <div className="absolute bottom-8 z-10 animate-bounce cursor-pointer block lg:hidden "> <a href="#about"><Image src="/scroll.svg" alt="touch scroll" width={80} height={80} /></a></div>
+      <div className="absolute bottom-8 z-10 animate-bounce cursor-pointer hidden lg:block "> <a href="#about"><Image src="/mouse-cursor.png" alt="mouse scroll" width={80} height={80} /></a></div>
       <div className="z-10">
           <div className="text-white font-mono w-fit flex justify center"  >    
           <h1 className="text-md sm:text-3xl " >{h1}</h1></div>

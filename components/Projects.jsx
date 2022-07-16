@@ -55,8 +55,8 @@ const Projects = () => {
                     quality={100} />
                 </div>    
                 <div className="absolute bg-[#2a465c] bg-opacity-70 hover:bg-opacity-40 transition duration-500  h-full left-0 right-0 rounded-lg" >
-                    <p className="text-md mt-4 ml-10 text-center text-blue-100 flex" >{work.title}</p>
-                    <p className="text-xs mt-2 ml-10 text-start text-blue-100 flex" >{work.descriptionBefore}<a className='mx-2 text-sky-400' href={work.projectUrl} >{work.name}</a></p>
+                    <p className="text-md mt-4 ml-10 text-center text-white flex" >{work.title}</p>
+                    <p className="text-xs mt-2 ml-10 text-start text-white flex" >{work.descriptionBefore}<a className='mx-2 font-semibold text-sky-400' href={work.projectUrl} >{work.name}</a></p>
                 </div>
             </SwiperSlide>
             )

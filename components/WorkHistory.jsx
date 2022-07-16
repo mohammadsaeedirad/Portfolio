@@ -26,12 +26,12 @@ const WorkHistory = () => {
           spaceBetween: 10,
         },
         1024: {
-          slidesPerView: 2,
+          slidesPerView: 3,
           spaceBetween: 10,
         },
       
     }}
-        slidesPerView={2}
+        slidesPerView={3}
         spaceBetween={30}
         loop={true}
         pagination={{
@@ -52,11 +52,11 @@ const WorkHistory = () => {
                     objectFit="cover"
                     quality={100} />
                 </div>    
-                <div className="absolute bg-[#2a465c] bg-opacity-80 hover:bg-opacity-40 transition duration-500  h-full left-0 right-0 rounded-lg" >
-                    <p className="text-md mt-4 ml-10 text-start text-blue-100 flex" >{work["job-title"]}</p>
-                    <a href={work["company-url"]} className="text-xs mt-2 ml-10 text-start text-yellow-400 flex" >{work.company}</a>
-                    <p className="text-xs mt-2 ml-10 text-start text-blue-100 flex" >{work.date}</p>
-                    <p className="text-xs mt-2 ml-10 text-start text-blue-100 flex" >working on <a className='mx-2 text-sky-400' href={work.projectUrl} >{work.description}</a>{work.descriptionAfter}</p>
+                <div className="absolute bg-[#2a465c] bg-opacity-80 hover:bg-opacity-50 transition duration-500  h-full left-0 right-0 rounded-lg" >
+                    <p className="text-md mt-4 ml-10 text-start text-white flex" >{work["job-title"]}</p>
+                    <a href={work["company-url"]} className="text-xs mt-2 ml-10 text-start text-yellow-400 font-semibold flex" >{work.company}</a>
+                    <p className="text-xs mt-2 ml-10 text-start text-white flex" >{work.date}</p>
+                    <p className="text-xs mt-2 ml-10 text-start text-white flex" >working on <a className='mx-2 font-semibold text-sky-400' href={work.projectUrl} >{work.description}</a>{work.descriptionAfter}</p>
                 </div>
             </SwiperSlide>
             )

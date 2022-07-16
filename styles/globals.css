@@ -94,28 +94,32 @@ a {
 }
 .javascript, .react,
 .next, .responsive,
-.css, .tailwind, .git, .seo, .docker ,.api ,.oop,.english{
+.css, .tailwind, .git, .seo, .docker ,.api ,.oop,.english,.node,.practices{
 	background: #4087b3;
 }
 
 .javascript {
-	width: 50%;
+	width: 60%;
 	-webkit-animation: javascript 7s linear;
 	animation: javascript 7s linear;
 }
 
 .react {
-	width: 60%;
+	width: 65%;
 	-webkit-animation: react 7s linear;
 	animation: react 7s linear;
 }
 
 .next{
-	width: 60%;
+	width: 65%;
 	-webkit-animation: next 7s linear;
 	animation: next 7s linear;
 }
-
+.node{
+	width: 35%;
+	-webkit-animation: next 7s linear;
+	animation: node 7s linear;
+}
 .responsive {
 	width: 85%;
 	-webkit-animation: responsive 7s linear;
@@ -168,7 +172,11 @@ a {
 	-webkit-animation: oop 7s linear;
 	animation: oop 7s linear;
 }
-
+.practices{
+	width: 60%;
+	-webkit-animation: practices 7s linear;
+	animation: oop 7s linear;
+}
 /*-----------------------
 	  	Animations 
 -------------------------*/ 
@@ -187,12 +195,16 @@ a {
 -------------------------*/
 @-webkit-keyframes react {
 	from { width: 0%; }
-	to { width: 60%; }
+	to { width: 65%; }
 }
 
 @keyframes react {
 	from { width: 0%; }
-	to { width: 60%; }
+	to { width: 65%; }
+}
+@keyframes node {
+	from { width: 0%; }
+	to { width: 35%; }
 }
 
 /*-----------------------
@@ -200,12 +212,12 @@ a {
 -------------------------*/ 
 @-webkit-keyframes next {
 	from { width: 0%; }
-	to { width: 60%; }
+	to { width: 65%; }
 }
 
 @keyframes next {
 	from { width: 0%; }
-	to { width: 60%; }
+	to { width: 65%; }
 }
 
 /*-----------------------

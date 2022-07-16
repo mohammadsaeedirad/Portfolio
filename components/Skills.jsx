@@ -10,21 +10,27 @@ const Skills = () => {
           <p className='text-zinc-300 pl-1 mb-1'>Skills</p>
         </div>
 				<div className="skill-lockup">
-					<span className="skill-name mb">javascript</span><span className="skill-status">50%</span>
+					<span className="skill-name mb">javascript</span><span className="skill-status">60%</span>
 					<span className="skill-bar">
 						<span className="skill-level javascript"></span>
 					</span>
 				</div>
 				<div className="skill-lockup mr">
-					<span className="skill-name mb">React js</span><span className="skill-status">60%</span>
+					<span className="skill-name mb">React js</span><span className="skill-status">65%</span>
 					<span className="skill-bar">
 						<span className="skill-level react"></span>
 					</span>
 				</div>
 				<div className="skill-lockup">
-					<span className="skill-name mb">Next js</span><span className="skill-status">60%</span>
+					<span className="skill-name mb">Next js</span><span className="skill-status">65%</span>
 					<span className="skill-bar">
 						<span className="skill-level next"></span>
+					</span>
+				</div>
+				<div className="skill-lockup">
+					<span className="skill-name mb">Node js, express js</span><span className="skill-status">35%</span>
+					<span className="skill-bar">
+						<span className="skill-level node"></span>
 					</span>
 				</div>
 				<div className="skill-lockup mr">
@@ -60,17 +66,25 @@ const Skills = () => {
 					</span>
 				</div>
         <div className="skill-lockup mr">
-					<span className="skill-name mb">SEO basics</span><span className="skill-status">70%</span>
+					<span className="skill-name mb">SEO</span><span className="skill-status">70%</span>
 					<span className="skill-bar">
 						<span className="skill-level seo"></span>
 					</span>
 				</div>
-        <div className="skill-lockup">
+               <div className="skill-lockup">
 					<span className="skill-name mb">Docker</span><span className="skill-status">35%</span>
 					<span className="skill-bar">
 						<span className="skill-level docker"></span>
 					</span>
 				</div>
+				<div className="skill-lockup">
+					<span className="skill-name mb">JavaScript Best Practices</span><span className="skill-status">60%</span>
+					<span className="skill-bar">
+						<span className="skill-level practices"></span>
+					</span>
+				</div>
+				
+
 				<div className="skill-lockup mr">
 					<span className="skill-name mb">RESTful Services/APIs</span><span className="skill-status">65%</span>
 					<span className="skill-bar">

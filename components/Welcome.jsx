@@ -4,10 +4,10 @@ const Welcome = () => {
   const h1="Hi, I'm mohammad"
   return ( 
     <div className="welcome welcome-container  relative">
-      <Image src="/background.svg" alt="mouse scroll" layout="fill"
+      <Image src="/back.svg" alt="mouse scroll" layout="fill"
         objectFit="cover"
         quality={100} />
-      <div className="absolute bottom-8 z-10 animate-bounce cursor-pointer block lg:hidden "> <a href="#about"><Image src="/arrow.svg" alt="touch scroll" width={80} height={80} /></a></div>
+      <div className="absolute bottom-8 z-10 animate-bounce cursor-pointer block lg:hidden "> <a href="#about"><Image src="/scroll.svg" alt="touch scroll" width={80} height={80} /></a></div>
       <div className="absolute bottom-8 z-10 animate-bounce cursor-pointer hidden lg:block "> <a href="#about"><Image src="/mouse-cursor.png" alt="mouse scroll" width={80} height={80} /></a></div>
       <div className="z-10">
           <div className="text-white  w-fit flex justify-center"  >    

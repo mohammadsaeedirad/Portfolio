@@ -1,5 +1,5 @@
 import React from "react";
-import workHistory from "../data/workHistory.json"
+import workHistory from "../data/workHistory.json";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
@@ -12,57 +12,88 @@ import Image from "next/image";
 import { Pagination, Navigation } from "swiper";
 
 const WorkHistory = () => {
-    return (
-    <div className="container mx-auto">
-    <p className='text-center mb-8 mt-14 text-gray-200 '>my work history</p>
-    <Swiper
-      style={{
-        "--swiper-navigation-color": "#f59e0b",
-        "--swiper-pagination-color": "#f59e0b",
-      }}
-      breakpoints={{
-        120: {
-          slidesPerView: 1,
-          spaceBetween: 10,
-        },
-        1024: {
-          slidesPerView: 3,
-          spaceBetween: 10,
-        },
-      
-    }}
+  return (
+    <div className='container mx-auto'>
+      <p className='text-center mb-8 mt-14 text-xl text-gray-100 '>
+        Experiences
+      </p>
+      <Swiper
+        style={{
+          "--swiper-navigation-color": "#fcad03",
+          "--swiper-pagination-color": "#fcad03",
+        }}
+        breakpoints={{
+          120: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          600: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+          },
+        }}
         slidesPerView={3}
         spaceBetween={30}
         loop={true}
-        pagination={{
-          clickable: true,
-        }}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className="mySwiper"
+        className='mySwiper'
       >
-        {workHistory.map((work,index)=>{
-            return(
-            <SwiperSlide key={index} >
-                <div className="w-full h-80 relative rounded-lg">
-                    <Image src={work.image}
+        {workHistory.map((work, index) => {
+          return (
+            <SwiperSlide key={index}>
+              <div className='w-full rounded-lg max-w-full border-sky-900 md:border-2  bg-slate-900'>
+                <div className='relative w-full h-64'>
+                <a href={work["company-url"]}>
+                  <div className='absolute z-20 bg-slate-800 bg-opacity-40 hover:bg-opacity-10 transition duration-500  h-full top-0 left-0 right-0 rounded-t-lg '></div>
+                  <Image
+                    src={work.image}
                     alt={work.company}
-                    layout="fill"
-                    className="rounded-lg min-w-20 min-h-20"
-                    objectFit="cover"
-                    quality={100} />
-                </div>    
-                <div className="absolute bg-[#2a465c] bg-opacity-80 hover:bg-opacity-50 transition duration-500  h-full left-0 right-0 rounded-lg" >
-                    <p className="text-md mt-4 ml-10 text-start text-white flex" >{work["job-title"]}</p>
-                    <a href={work["company-url"]} className="text-xs mt-2 ml-10 text-start text-yellow-400 font-semibold flex" >{work.company}</a>
-                    <p className="text-xs mt-2 ml-10 text-start text-white flex" >{work.date}</p>
-                    <p className="text-xs mt-2 ml-10 text-start text-white flex" >working on <a className='mx-2 font-semibold text-sky-400' href={work.projectUrl} >{work.description}</a>{work.descriptionAfter}</p>
+                    layout='fill'
+                    className='rounded-t-lg min-w-20 min-h-20'
+                    objectFit='cover'
+                    quality={100}
+                  />
+                   </a>
+
                 </div>
+                <div className='p-5 w-full '>
+                  <h5 className='font-bold text-2xl tracking-tight text-white'>
+                    {work["job-title"]}
+                  </h5>
+                  <a
+                    href={work["company-url"]}
+                    className='text-xs text-[#fcad03] font-semibold text-center'
+                  >
+                    {work.company}
+                  </a>
+
+                  <p className='font-normal mb-3 mt-2 text-gray-300'>
+                    {work.description} {work.descriptionAfter}
+                  </p>
+
+                  <div className='flex flex-col-reverse items:center lg:flex-row lg:justify-between lg:items-end'>
+                    <a
+                      href={work["company-url"]}
+                      className='text-white self-center text-center max-w-40 transition duration-300  bg-sky-800 hover:bg-sky-900 focus:ring-4 focus:ring-skyblue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center  dark:focus:ring-blue-800'
+                    >
+                      visit website
+                    </a>
+                    <p className='font-normal text-xs  mb-3 text-gray-100'>            
+                      {work.date}
+                    </p>
+                  </div>
+                </div>
+              </div>
             </SwiperSlide>
-            )
+          );
         })}
-         </Swiper>
+      </Swiper>
     </div>
   );
-}
+};
 export default WorkHistory;

@@ -37,13 +37,16 @@ a {
 }
 
 .about {
-  background-color: #2a465c;
+	background-color: #fcad03;
+
+  /* background-color: rgba(12, 26, 60, 0.752); */
   /* Resize the background image to cover the entire container */
 }
 .about-card{
-  background-color: #316d92;
+  background-color: #031019;
   color: #f2f2f2;
 }
+
 
 
 .skillset {
@@ -95,7 +98,7 @@ a {
 .javascript, .react,
 .next, .responsive,
 .css, .tailwind, .git, .seo, .docker ,.api ,.oop,.english,.node,.practices{
-	background: #4087b3;
+	background: #0f557e;
 }
 
 .javascript {

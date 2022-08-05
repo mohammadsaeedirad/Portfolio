@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useRef} from "react";
 import sampleProjects from "../data/sampleProjects.json";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -12,11 +12,26 @@ import Image from "next/image";
 import { Pagination, Navigation } from "swiper";
 
 const Projects = () => {
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
   return (
-    <div className='container my-20  mx-auto'>
+    <div className='container my-20  mx-auto relative'>
       <p className='text-center mb-8 text-xl text-gray-100  '>
         Top Projects
       </p>
+      <div className=" text-zinc-900 font-bold z-20 " >
+      <div
+        ref={prevRef}
+        className='cursor-pointer absolute right-6 md:left-16 flex justify-center items-center w-8 h-8 bg-[#febf35] rounded-2xl top-0'>
+        {">"}
+      </div>
+      <div
+        ref={nextRef}
+        className='cursor-pointer absolute right-16 md:left-6 flex justify-center items-center w-8 h-8 bg-[#febf35] rounded-2xl top-0'
+        >
+        {"<"}
+      </div>
+      </div>
       <Swiper
         style={{
           "--swiper-navigation-color": "#febf35",
@@ -36,12 +51,17 @@ const Projects = () => {
             spaceBetween: 15,
           },
         }}
+        onInit={(swiper) => {
+          swiper.params.navigation.prevEl = prevRef.current;
+          swiper.params.navigation.nextEl = nextRef.current;
+          swiper.navigation.init();
+          swiper.navigation.update();
+        }}
         spaceBetween={30}
         loop={true}
         pagination={{
           clickable: true,
         }}
-        navigation={true}
         modules={[Pagination, Navigation]}
         className='mySwiper'
       >

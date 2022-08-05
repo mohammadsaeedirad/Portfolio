@@ -13,14 +13,14 @@ import { Pagination, Navigation } from "swiper";
 
 const WorkHistory = () => {
   return (
-    <div className='container mx-auto'>
-      <p className='text-center mb-8 mt-14 text-xl text-gray-100 '>
+    <div className='container my-20 mx-auto'>
+      <p className='text-center mb-8 text-xl text-gray-100 '>
         Experiences
       </p>
       <Swiper
         style={{
-          "--swiper-navigation-color": "#fcad03",
-          "--swiper-pagination-color": "#fcad03",
+          "--swiper-navigation-color": "#febf35",
+          "--swiper-pagination-color": "#febf35",
         }}
         breakpoints={{
           120: {
@@ -46,7 +46,7 @@ const WorkHistory = () => {
         {workHistory.map((work, index) => {
           return (
             <SwiperSlide key={index}>
-              <div className='w-full rounded-lg max-w-full border-sky-900 md:border-2  bg-slate-900'>
+              <div className='w-full rounded-lg max-w-full  bg-slate-900'>
                 <div className='relative w-full h-64'>
                 <a href={work["company-url"]}>
                   <div className='absolute z-20 bg-slate-800 bg-opacity-40 hover:bg-opacity-10 transition duration-500  h-full top-0 left-0 right-0 rounded-t-lg '></div>
@@ -67,7 +67,7 @@ const WorkHistory = () => {
                   </h5>
                   <a
                     href={work["company-url"]}
-                    className='text-xs text-[#fcad03] font-semibold text-center'
+                    className='text-xs text-[#febf35] font-semibold text-center'
                   >
                     {work.company}
                   </a>
@@ -79,7 +79,7 @@ const WorkHistory = () => {
                   <div className='flex flex-col-reverse items:center lg:flex-row lg:justify-between lg:items-end'>
                     <a
                       href={work["company-url"]}
-                      className='text-white self-center text-center max-w-40 transition duration-300  bg-sky-800 hover:bg-sky-900 focus:ring-4 focus:ring-skyblue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center  dark:focus:ring-blue-800'
+                      className='text-white self-center text-center max-w-40 transition duration-300  bg-sky-800 hover:bg-sky-900 focus:ring-4 focus:ring-skyblue-300 font-medium rounded-lg text-sm px-3 py-2  inline-flex items-center'
                     >
                       visit website
                     </a>

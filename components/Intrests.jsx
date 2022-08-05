@@ -18,8 +18,8 @@ const Intrests = () => {
       {img:'/pizza.svg',url:'/'},
   ]    
   return (
-    <>
-      <p className='text-center mb-8 mt-14 text-xl text-gray-100  '>Interests</p>
+    <div className="mt-20 mb-4">
+      <p className='text-center mb-8 text-xl text-gray-100  '>Interests</p>
         <Swiper
           className="swiper2 "
           slidesPerView={3}
@@ -54,7 +54,7 @@ const Intrests = () => {
             );
           })}
         </Swiper>
-    </>
+    </div>
   );
 };
 

@@ -13,14 +13,14 @@ import { Pagination, Navigation } from "swiper";
 
 const Projects = () => {
   return (
-    <div className='container mx-auto'>
-      <p className='text-center mb-8 mt-14 text-xl text-gray-100  '>
+    <div className='container my-20  mx-auto'>
+      <p className='text-center mb-8 text-xl text-gray-100  '>
         Top Projects
       </p>
       <Swiper
         style={{
-          "--swiper-navigation-color": "#fcad03",
-          "--swiper-pagination-color": "#fcad03",
+          "--swiper-navigation-color": "#febf35",
+          "--swiper-pagination-color": "#febf35",
         }}
         breakpoints={{
           120: {
@@ -65,7 +65,7 @@ const Projects = () => {
                 <p className='text-xs mt-2 ml-10 text-start text-white flex'>
                   {work.descriptionBefore}
                   <a
-                    className='mx-2 font-semibold text-[#fcad03]'
+                    className='mx-2 font-semibold text-[#febf35]'
                     href={work.projectUrl}
                   >
                     {work.name}

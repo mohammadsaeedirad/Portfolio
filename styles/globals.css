@@ -36,18 +36,10 @@ a {
   justify-content: center;
 }
 
-.about {
-	background-color: #febf35;
-
-  /* background-color: rgba(12, 26, 60, 0.752); */
-  /* Resize the background image to cover the entire container */
-}
 .about-card{
   background-color: #031019;
   color: #f2f2f2;
 }
-
-
 
 .skillset {
 	margin-top: 10px;

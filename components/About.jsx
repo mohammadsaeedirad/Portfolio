@@ -5,7 +5,6 @@ const About = () => {
       <div id='about' className="sm:container about my-20 mx-auto p-4 md:p-0 rounded relative"> 
       <div  className=" p-2 flex flex-wrap w-full lg:w-4/5 mx-auto"> 
         <div className="bg-cover  opacity-90 bg-bottom w-full md:w-1/3 h-96 md:h-90 overflow-hidden bg-[#3b6aa038] rounded  relative" style={{backgroundImage:"url('mohammadsaeedirad.png')",backgroundPosition:"center center"}}>
-        {/* <div className="absolute w-40 h-40 bg-[#24628f50] rounded -top-16 -left-16" ></div>  */}
         </div>
         <div className="about-card-wrapper h-full w-full md:w-2/3">
           <div className="h-full mx-auto px-6 md:px-0 md:pt-6 md:-ml-6 relative">

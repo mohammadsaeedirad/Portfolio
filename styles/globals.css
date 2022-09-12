@@ -40,6 +40,8 @@ a {
 .about-card {
   background-color: #031019;
   color: #f2f2f2;
+  -webkit-box-shadow: 27px 27px 16px -17px rgba(8, 38, 82, 0.36);
+  box-shadow: 27px 27px 16px -17px rgba(8, 38, 82, 0.36);
 }
 
 .skillset {

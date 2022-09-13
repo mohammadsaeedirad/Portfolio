@@ -1,4 +1,4 @@
-import React, {useRef} from "react";
+import React, { useRef } from "react";
 import sampleProjects from "../data/sampleProjects.json";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -16,21 +16,25 @@ const Projects = () => {
   const nextRef = useRef(null);
   return (
     <div className='container my-20  mx-auto relative'>
-      <p className='text-center mb-8 text-xl text-gray-100  '>
-        Top Projects
-      </p>
-      <div className=" text-zinc-900 font-bold z-20 " >
-      <div
-        ref={prevRef}
-        className='cursor-pointer absolute right-6 md:left-16 flex justify-center items-center w-8 h-8 bg-[#febf35] rounded-2xl top-0'>
-        {">"}
-      </div>
-      <div
-        ref={nextRef}
-        className='cursor-pointer absolute right-16 md:left-6 flex justify-center items-center w-8 h-8 bg-[#febf35] rounded-2xl top-0'
+      <p className='text-center mb-8 text-xl text-gray-100  '>Top Projects</p>
+      <div className=' text-zinc-900 font-bold z-20 '>
+        <div
+          ref={prevRef}
+          className='cursor-pointer absolute right-6 md:left-16 flex justify-center items-center w-8 h-8 bg-[#febf35] rounded-2xl top-0'
         >
-        {"<"}
-      </div>
+          <Image src='/next.png' width={20} height={20} />
+        </div>
+        <div
+          ref={nextRef}
+          className='cursor-pointer absolute right-16 md:left-6 flex justify-center items-center w-8 h-8 bg-[#febf35] rounded-2xl top-0'
+        >
+          <Image
+            src='/next.png'
+            className='rotate-180'
+            width={20}
+            height={20}
+          />
+        </div>
       </div>
       <Swiper
         style={{
@@ -57,44 +61,44 @@ const Projects = () => {
           swiper.navigation.init();
           swiper.navigation.update();
         }}
+        slidesPerView={3}
         spaceBetween={30}
         loop={true}
-        pagination={{
-          clickable: true,
-        }}
         modules={[Pagination, Navigation]}
         className='mySwiper'
       >
-        {sampleProjects.map((work, index) => {
-          return (
-            <SwiperSlide key={index}>
-              <div className='w-full h-80 relative rounded-lg'>
-                <Image
-                  src={work.image}
-                  alt={work.name}
-                  layout='fill'
-                  className='rounded-lg'
-                  objectFit='cover'
-                  quality={100}
-                />
-              </div>
-              <div className='absolute bg-slate-800 bg-opacity-40 hover:bg-opacity-10 transition duration-500  h-full left-0 right-0 rounded-lg'>
-                <p className='text-md mt-4 ml-10 text-center font-semibold text-white flex'>
-                  {work.title}
-                </p>
-                <p className='text-xs mt-2 ml-10 text-start text-white flex'>
-                  {work.descriptionBefore}
-                  <a
-                    className='mx-2 font-semibold text-[#febf35]'
-                    href={work.projectUrl}
-                  >
-                    {work.name}
-                  </a>
-                </p>
-              </div>
-            </SwiperSlide>
-          );
-        })}
+        {sampleProjects &&
+          sampleProjects.map((work, index) => {
+            return (
+              <SwiperSlide key={index}>
+                <div className='w-full h-80 relative rounded-lg'>
+                  <Image
+                    src={work.image}
+                    alt={work.name}
+                    layout='fill'
+                    className='rounded-lg'
+                    objectFit='cover'
+                    quality={100}
+                  />
+                </div>
+                <a
+                  target='_blank'
+                  href={work.projectUrl}
+                  className='absolute bg-slate-800 bg-opacity-50 hover:bg-opacity-10 transition duration-500  h-full left-0 right-0 rounded-lg'
+                >
+                  <p className='text-md mt-4 ml-10 text-center font-semibold text-white flex'>
+                    {work.title}
+                  </p>
+                  <p className='text-xs mt-2 ml-10 text-start text-white flex'>
+                    {work.descriptionBefore}
+                    <p className='mx-2 font-semibold text-[#febf35]'>
+                      {work.name}
+                    </p>
+                  </p>
+                </a>
+              </SwiperSlide>
+            );
+          })}
       </Swiper>
     </div>
   );

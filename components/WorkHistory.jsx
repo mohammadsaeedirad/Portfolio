@@ -21,7 +21,7 @@ const WorkHistory = () => {
           ref={prevRef}
           className='cursor-pointer absolute right-6 md:left-16 flex justify-center items-center w-8 h-8 bg-[#febf35] rounded-2xl top-0'
         >
-          <Image src='/next.png' width={20} height={20} />
+          <Image alt="arrow" src='/next.png' width={20} height={20} />
         </div>
         <div
           ref={nextRef}
@@ -29,6 +29,7 @@ const WorkHistory = () => {
         >
           <Image
             src='/next.png'
+            alt="arrow"
             className='rotate-180'
             width={20}
             height={20}
@@ -85,15 +86,15 @@ const WorkHistory = () => {
                   </a>
                 </div>
                 <div className='p-5 w-full '>
-                  <h5 className='font-bold text-2xl tracking-tight text-white'>
+                  <h4 className='font-bold text-2xl tracking-tight text-white'>
                     {work["job-title"]}
-                  </h5>
+                  </h4>
                   <a
                   target="_blank"
                     href={work["company-url"]}
                     className='text-xs text-[#febf35] font-semibold text-center'
                   >
-                    {work.company}
+                    <h5>{work.company}</h5>
                   </a>
 
                   <p className='font-normal mb-3 mt-2 text-gray-300'>

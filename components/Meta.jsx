@@ -1,7 +1,7 @@
 import Head from "next/head";
 import {useState} from "react"
 
-const Meta = ({ title, description,indexed}) => {
+const Meta = ({ title, description,indexed,schema}) => {
   return (
     <Head>
       <meta name='viewport' content='width=device-width, initial-scale=1' />
@@ -16,6 +16,10 @@ const Meta = ({ title, description,indexed}) => {
         rel='icon'
         href='/profile-circle.png'
       />
+      <script
+          type='application/ld+json'
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
      <meta name="google-site-verification" content="fH4_Ao05ZMFomq3eJVrNO4R382yP959pDQMSBoYUgmE" />
     </Head>
   );

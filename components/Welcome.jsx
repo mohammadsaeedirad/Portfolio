@@ -1,7 +1,7 @@
 import Image from "next/image";
 import TypeAnimation from "react-type-animation";
 const Welcome = () => {
-  const h1 = "Hi, I'm mohammad";
+  const h1 = "Hi, I'm mohammad saeedi";
   return (
     <div className='welcome welcome-container  relative h-screen'>
       <Image

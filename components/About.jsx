@@ -31,15 +31,15 @@ const About = () => {
                 </div>
 
                 <div className='w-full h-52 lg:w-3/5 lg:px-3 text-left'>
-                  <p className='text-md mt-4 lg:mt-0  md:text-left text-sm'>
+                  <h3 className='text-md mt-4 lg:mt-0  md:text-left text-sm'>
                     Hi, <span className='text-[#febf35]'>welcome</span> to my
-                    portfolio. as you know my name is mohammad and I'm graduated
+                    portfolio. as you know my name is mohammad saeedi and I'm graduated
                     at{" "}
                     <a href='https://iau.ir/fa' className='text-[#febf35]'>
                       islamic azad university
                     </a>{" "}
                     with bachelor degree of computer engineering.
-                  </p>
+                  </h3>
                   <p className='text-md lg:mt-0 md:text-left text-sm'>
                     I am a mature, positive and hardworking individual, who
                     always strives to achieve the highest standard possible, at

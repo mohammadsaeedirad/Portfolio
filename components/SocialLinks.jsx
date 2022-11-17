@@ -5,7 +5,7 @@ const SocialLinks = () => {
   return (
     <div className='relative'>
       <div className='z-40 section__title fixed top-7 sm:top-44 left-0 sm:left-1 space-y-2 flex flex-col'>
-        <a href='https://www.linkedin.com/in/mohammad-saeedi-rad-54b2341b7/'>
+        <a target="blank" href='https://linkedin.com/in/mohammad-saeedirad-a45593257'>
           <Image
             src='/linkedin.png'
             alt='mohammad saeedi rad linkedin'
@@ -14,7 +14,7 @@ const SocialLinks = () => {
           />
         </a>
 
-        <a href='https://github.com/mohammadsaeedirad'>
+        <a target="blank" href='https://github.com/mohammadsaeedirad'>
           <Image
             src='/github.png'
             alt='mohammad saeedi rad github'
@@ -30,7 +30,7 @@ const SocialLinks = () => {
             height={32}
           />
         </a>
-        <a href='https://instagram.com/mohamadsaeedi.web' className='ml-1'>
+        <a target="blank" href='https://instagram.com/mohamadsaeedi.web' className='ml-1'>
           <Image
             src='/instagram.png'
             alt='mohammad saeedi rad instagram'
